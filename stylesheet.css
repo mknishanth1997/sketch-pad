@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url(img/10078915.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 10px solid black; */
+}
+img {
+    width: 500px;
+    height: 150px;
+}
+.input-section {
+    flex: 1;
+}
+
+.drawing-pad {
+    width: 900px;
+    height: 500px;
+    border: 5px solid #000; /* Bold black border */
+    border-radius: 10px; /* Rounded corners for a smooth appearance */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    background-color: #fff; /* White background for the drawing area */
+    margin: 20px auto; /* Center it with some margin */
+    flex-wrap: wrap;
+    display: flex;
+}
+.first {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    font-size: 28px;
+    margin: 0;
+    align-items: center;
+}
+input {
+    height: 50px;
+    border-radius: 10px;
+    background-color: #f0f0f0; /* Light gray background */
+    border: 2px solid #ccc; /* Slightly darker gray border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; /* Padding for better text visibility */
+    font-size: 16px; /* Adequate font size */
+    color: #333; /* Dark gray text color */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+input:focus {
+    border-color: #ffa500; /* Orange border on focus */
+    outline: none; /* Remove default outline */
+}
+
+.buttons {
+    flex: 0.5;
+    display: flex;
+    width: 900px;
+    align-items: center;
+    gap: 32px;
+    margin-top: 32px;
+    /* border: 2px solid black; */
+    button {
+        /* border: 2px solid black; */
+        flex: 1;
+        font-size: 22px;
+        padding: 25px;
+        border-radius: 25px;
+    }
+}
+
+/* styles.css */
+.rgb {
+    background: linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(255,154,0,1) 10%, rgba(208,222,33,1) 20%, rgba(79,220,74,1) 30%, rgba(63,218,216,1) 40%, rgba(47,201,226,1) 50%, rgba(28,127,238,1) 60%, rgba(95,21,242,1) 70%, rgba(186,12,248,1) 80%, rgba(251,7,217,1) 90%, rgba(255,0,0,1) 100%);
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.rgb:hover {
+    box-shadow: 0 0 30px rgba(255,0,0,1),
+                0 0 40px rgba(255,154,0,1),
+                0 0 50px rgba(208,222,33,1),
+                0 0 60px rgba(79,220,74,1),
+                0 0 70px rgba(63,218,216,1),
+                0 0 80px rgba(47,201,226,1),
+                0 0 90px rgba(28,127,238,1),
+                0 0 100px rgba(95,21,242,1),
+                0 0 110px rgba(186,12,248,1),
+                0 0 120px rgba(251,7,217,1);
+}
+.black {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+.black:hover {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 1),
+    0 0 40px rgba(255, 255, 255, 1),
+    0 0 50px rgba(255, 255, 255, 1),
+    0 0 60px rgba(255, 255, 255, 1),
+    0 0 70px rgba(255, 255, 255, 1),
+    0 0 80px rgba(255, 255, 255, 1),
+    0 0 90px rgba(255, 255, 255, 1),
+    0 0 100px rgba(255, 255, 255, 1);
+}
+.trail {
+    background: linear-gradient(45deg, #ff0000, #ff6347); /* Bright red to tomato red gradient */
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+.trail:hover {
+    box-shadow: 0 0 30px rgba(255, 69, 0, 1), /* Brighter glow on hover */
+                0 0 40px rgba(255, 69, 0, 1),
+                0 0 50px rgba(255, 69, 0, 1),
+                0 0 60px rgba(255, 69, 0, 1),
+                0 0 70px rgba(255, 69, 0, 1),
+                0 0 80px rgba(255, 69, 0, 1),
+                0 0 90px rgba(255, 69, 0, 1),
+                0 0 100px rgba(255, 69, 0, 1);
+}
+.delete {
+    background: linear-gradient(45deg, #8B0000, #B22222); /* Dark red gradient */
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.delete:hover {
+    box-shadow: 0 0 30px rgba(178, 34, 34, 1),
+                0 0 40px rgba(178, 34, 34, 1),
+                0 0 50px rgba(178, 34, 34, 1),
+                0 0 60px rgba(178, 34, 34, 1),
+                0 0 70px rgba(178, 34, 34, 1),
+                0 0 80px rgba(178, 34, 34, 1),
+                0 0 90px rgba(178, 34, 34, 1),
+                0 0 100px rgba(178, 34, 34, 1);
+}
+
+.eraser {
+    background: linear-gradient(45deg, #ffffff, #dcdcdc); /* White to light gray gradient */
+    color: black;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.eraser:hover {
+    box-shadow: 0 0 30px rgba(135, 206, 250, 1),
+                0 0 40px rgba(135, 206, 250, 1),
+                0 0 50px rgba(135, 206, 250, 1),
+                0 0 60px rgba(135, 206, 250, 1),
+                0 0 70px rgba(135, 206, 250, 1),
+                0 0 80px rgba(135, 206, 250, 1),
+                0 0 90px rgba(135, 206, 250, 1),
+                0 0 100px rgba(135, 206, 250, 1);
+}
+
+.squares {
+    box-sizing: border-box;
+    border: .1px solid black;
+    margin: 0;
+    padding: 0;
+    height: 250px;
+    width: 450px;
+}
+.hov:hover {
+    background-color: gold;
+}
+
+.add {
+    width: 40px;
+    height: 50px;
+    background-color: lime;
+    font-size: 32px;
+    border-radius: 10px;
+}
+.add:hover {
+    background-color: limegreen;
+    box-shadow: 0 0 30px rgba(255, 69, 0, 1), /* Brighter glow on hover */
+    0 0 40px rgb(81, 255, 0),
+    0 0 50px rgb(81, 255, 0),
+    0 0 60px rgb(238, 215, 5),
+    0 0 70px rgb(136, 255, 0),
+    0 0 80px rgb(245, 221, 7),
+    0 0 90px rgb(88, 224, 9),
+    0 0 100px rgba(255, 69, 0, 1);
+}
+
+  
